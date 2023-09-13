@@ -4,7 +4,7 @@ from colorama import init as colorama_init
 from colorama import Fore
 from colorama import Style
 #
-url="https://10.10.1.50:8089/services/admin/inputstatus/TailingProcessor%3AFileStatus"
+url="https://192.168.11.22:8089/services/admin/inputstatus/TailingProcessor%3AFileStatus"
 user = ""
 pw = ""
 cmd = "curl --get -d output_mode=json -k --silent -u "+user+":"+pw+" "+url
