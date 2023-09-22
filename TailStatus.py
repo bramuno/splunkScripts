@@ -87,12 +87,7 @@ if verbose >= 1:
 ############################################
 data = "output_mode=json"
 url = "https://"+str(hostname)+":8089/services/admin/inputstatus/TailingProcessor%3AFileStatus"
-cmd = "curl --get -d "+str(data)+" -k --silent -u "+username+":"+password+" "+url
-#dd = requests.get(url, headers={'Accept': 'application/json'}, data=data, auth=(username, password), verify=False)
-
-if verbose >= 1:
-    print("cmd = "+str(cmd))
-
+#
 if watch != "":
     print("Refreshing every 1s\n\n")
     iter = 0; lpos=0; lsize=0; cpos=0; csize=0; pdiff=0; sdiff=0;tdiff=0;bdiff=0;ltype=0
