@@ -2,5 +2,5 @@
 
 
 <lu>
-<li><b>TailStatus.py</b> - Same as 'splunk list inputstatus' command, filtering on tailed log files. Option to watch the file and verify the log file is growing in size and splunk is reading the file.  Another option to filter for a specific keyword and only return those logs. Default will return all log files tailed by splunk, but no other input types. </li>
+<li><b>getInsputStatus.py</b> - Same as 'splunk list inputstatus' command, but with extra options to track the status as needed.  See the options at the top of the document. </li>
 </lu>
